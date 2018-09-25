@@ -1,0 +1,43 @@
+body{
+  background: #f2f2f2;
+}
+/* Just to center the button, not really important but
+make sure you define the button's position*/
+.btn{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.btn{
+  background: linear-gradient(90deg, #be2edd, #5f27cd);
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 45px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 1px 2px 2px;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+}
+
+.btn:hover{
+  background: linear-gradient(90deg, #d50fff, #44199a);
+}
+
+.btn .btn-ripple{
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  border-radius: 100%;
+  animation: ripple 1s;
+  transform: scale(0);
+}
+
+@keyframes ripple {
+  100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
